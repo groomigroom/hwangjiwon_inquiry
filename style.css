@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.groomi_box{
+    width: 50vw;
+    height: 50vw;
+    margin-left: 25vw;
+    margin-top: 10vw;
+    background-color: aqua;
+}
+.title_box{
+    width: 50vw;
+    height: 5vw;
+    margin-top: 5vw;
+    margin-left: 25vw;
+    background-color: aquamarine;
+}
+
