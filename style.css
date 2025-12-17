@@ -1,20 +1,61 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    /* font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; */
 }
-.groomi_box{
+
+.groomi_box {
     width: 50vw;
     height: 50vw;
     margin-left: 25vw;
     margin-top: 10vw;
     background-color: aqua;
 }
-.title_box{
+
+.title_box {
     width: 50vw;
     height: 5vw;
     margin-top: 5vw;
     margin-left: 25vw;
     background-color: aquamarine;
+    cursor: pointer;
 }
 
+.main_page {
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: azure;
+    display: none;
+    z-index: 1;
+}
+
+.box_one_main.on {
+    display: block;
+}
+
+.main_button {
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    top: 10vw;
+    left: 10vw;
+    background-color: black;
+    cursor: pointer;
+}
+
+.box_two_main.on {
+    display: block;
+}
+
+.box_three_main.on {
+    display: block;
+}
