@@ -15,15 +15,16 @@
     height: 50vw;
     margin-left: 25vw;
     margin-top: 10vw;
-    background-color: aqua;
+    background-color: rgb(121, 206, 206);
 }
 
 .title_box {
     width: 50vw;
     height: 5vw;
+    border-radius: 10px;
     margin-top: 5vw;
     margin-left: 25vw;
-    background-color: aquamarine;
+    background-color: rgb(139, 211, 187);
     cursor: pointer;
 }
 
@@ -45,6 +46,7 @@
 .main_button {
     width: 10vw;
     height: 10vw;
+    border-radius: 10px;
     position: absolute;
     top: 10vw;
     left: 10vw;
@@ -57,5 +59,13 @@
 }
 
 .box_three_main.on {
+    display: block;
+}
+
+.box_four_main.on {
+    display: block;
+}
+
+.box_five_main.on {
     display: block;
 }
