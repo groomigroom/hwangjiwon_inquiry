@@ -40,7 +40,3 @@ let box_five_main_out = document.querySelector(".box_five_main_out");
 
 box_five.addEventListener("click", () => box_five_main.classList.add("on"));
 box_five_main_out.addEventListener("click", () => box_five_main.classList.remove("on"));
-
-
-
-
