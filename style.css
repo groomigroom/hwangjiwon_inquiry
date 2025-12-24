@@ -11,10 +11,25 @@
     color: #A06632;
 }
 
-body{
-    background: url("./hwangjiwon_inquiry_background_computer-01.jpg");
-    background-size: 100vw auto;
-    background-repeat: repeat-y;
+body {
+  margin: 0;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed; /* 스크롤 따라오게 */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: url("./hwangjiwon_inquiry_background_computer-01.jpg");
+  background-size: 100vw auto;
+  background-repeat: repeat-y;
+
+  opacity: 0.3; /* ← 배경만 투명도 조절 */
+  z-index: -1;  /* 콘텐츠 뒤로 */
 }
 
 .groomi_box {
@@ -22,8 +37,30 @@ body{
     height: 50vw;
     margin-left: 25vw;
     margin-top: 10vw;
-    background-color: rgb(121, 206, 206);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.logo_box{
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo_box_mobile{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .logo_box_pc{
+        display: none;
+    }
+    .logo_box_mobile{
+        display: block;
+    }
+}
+
 
 .title_box {
     width: 50vw;
